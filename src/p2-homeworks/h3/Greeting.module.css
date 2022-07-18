@@ -1,7 +1,15 @@
-.someClass {
 
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.someClass {
+    color: red;
 }
 
 .error {
-    border: 1px solid red;
+    border: 2px solid red;
+    outline: none;
 }

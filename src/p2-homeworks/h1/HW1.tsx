@@ -4,7 +4,7 @@ import Message from "./Message";
 const messageData = {
     avatar: 'http://sun9-8.userapi.com/s/v1/if1/WaepbKN4IgFKIzC1A5Pu6mHBY5kFiNISZRQ1InIX6mg5fD3FyUsqeVZTAaYsbkcoQch_JQA8.jpg?size=200x300&quality=96&crop=0,0,200,300&ava=1',
     name: 'Vitalick',
-    message: 'домашку сделал)',
+    message: 'дз-1 готово',
     time: '22:00',
 }
 
