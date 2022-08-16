@@ -20,14 +20,12 @@ function HW3() {
     // need to fix any
 
     const addUserCallback = (name: string) => { // need to fix any
-        setUsers([{_id: v1(), name: name}, ...users]) // need to fix
+        setUsers((users) => [{_id: v1(), name: name}, ...users]) // need to fix
     }
 
     return (
-        <div className={'HW3'}>
+        <div>
             <hr/>
-            homeworks 3
-
             {/*should work (должно работать)*/}
             <GreetingContainer
                 users={users}

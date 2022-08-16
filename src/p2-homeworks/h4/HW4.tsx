@@ -19,6 +19,7 @@ function HW4() {
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
+
     return (
         <div>
             <hr/>
@@ -30,21 +31,21 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    //spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue} // проверьте, работает ли смешивание классов
                 />
 
-                {/*----------------------------------------------------*/}
+                ----------------------------------------------------
 
                 <SuperButton>
                     default
                 </SuperButton>
 
                 <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
+                    modeButton // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
                     delete {/*// название кнопки попадёт в children*/}
@@ -54,7 +55,7 @@ function HW4() {
                     disabled
                 </SuperButton>
 
-                {/*----------------------------------------------------*/}
+                ----------------------------------------------------
 
                 <SuperCheckbox
                     checked={checked}
@@ -64,7 +65,10 @@ function HW4() {
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <SuperCheckbox
+                    checked={checked}
+                    onChange={testOnChange}
+                />
             </div>
 
             <hr/>

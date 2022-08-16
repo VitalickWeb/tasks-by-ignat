@@ -1,5 +1,25 @@
+/*Обычно хорошей практикой считается для всех элементов включая псевдоэлементы установить box-sizing: border-box*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 1 – Изменим стили шрифтов */
+/* 2 – Удалим margin в Firefox и Safari */
+input[type="text"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/* установим отступ 1rem от нижнего края элемента */
+.text-field {
+    margin-bottom: 1rem;
+}
+
 .blue {
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid rgba(0, 0, 255, 0.65);
 }
 
 .column {

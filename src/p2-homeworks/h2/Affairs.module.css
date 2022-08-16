@@ -2,9 +2,10 @@
 .itemButtons {
     background-color: rgba(95, 158, 160, 0.78);
     width: 100%;
-    height: 165px;
+    height: 200px;
     display: flex;
     justify-content: center;
+
 }
 
 .itemButtons .items {
@@ -12,7 +13,7 @@
     width: 15%;
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 
 .itemButtons .items .itemsBlock {
