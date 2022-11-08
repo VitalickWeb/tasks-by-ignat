@@ -1,0 +1,33 @@
+.NavImgBox {
+    display: flex;
+    padding-left: 10px;
+    background-color: rgba(87, 159, 191, 0.5);
+}
+
+.NavLinkBox {
+    margin-right: 5px;
+    /*display: none;*/
+}
+
+.item a {
+    text-decoration: none;
+    color: #666677;
+    font-weight: 600;
+    font-family: "Arial";
+}
+
+.itemImg {
+    display: flex;
+    align-items: center;
+}
+
+.itemImg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.item a.active {
+    color: snow;
+}
