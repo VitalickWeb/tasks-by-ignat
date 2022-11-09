@@ -5,14 +5,11 @@ import st from './Header.module.css'
 
 function Header() {
 
-    const [hide, setHide] = useState<boolean>(true)
+    const [hide, setHide] = useState<boolean>(false)
 
     const clickImg = () => {
-        if (hide) {
-            setHide(!hide)
-        } else {
-            setHide(true)
-        }
+        setHide(!hide)
+        // setHide(prevState => !prevState) - альтернативная запись
     }
 
     return (
@@ -21,13 +18,15 @@ function Header() {
             {hide &&
                 <div className={st.NavLinkBox}>
                     <div className={st.item}>
-                        <NavLink to="/pre-junior" className={st.active}>Pre-junior</NavLink>
+                        <NavLink to="/pre-junior"
+                                 className={navData => navData.isActive ? st.active : st.item}>Pre-junior</NavLink>
                     </div>
                     <div className={st.item}>
-                        <NavLink to="/june" className={st.active}>June</NavLink>
+                        <NavLink to="/june" className={navData => navData.isActive ? st.active : st.item}>June</NavLink>
                     </div>
                     <div className={st.item}>
-                        <NavLink to="/june-plus" className={st.active}>June-plus</NavLink>
+                        <NavLink to="/june-plus"
+                                 className={navData => navData.isActive ? st.active : st.item}>June-plus</NavLink>
                     </div>
                 </div>}
             <div className={st.itemImg}>

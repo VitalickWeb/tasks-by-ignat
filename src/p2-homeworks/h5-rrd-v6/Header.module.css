@@ -1,24 +1,43 @@
 .NavImgBox {
+    min-height: 68px;
     display: flex;
     padding-left: 10px;
     background-color: rgba(87, 159, 191, 0.5);
 }
 
-.NavLinkBox {
+.NavImgBox.NavLinkBox {
+    align-items: center;
     margin-right: 5px;
     /*display: none;*/
 }
 
 .item a {
     text-decoration: none;
-    color: #666677;
+    color: snow;
     font-weight: 600;
     font-family: "Arial";
+    transition: all 1s;
+}
+
+.item a:hover {
+    /*padding: 2px 4px 2px 4px;*/
+    /*border-radius: 3px;*/
+    text-decoration: none;
+    /*background-color: #616060;*/
+    color: gold;
+    font-weight: 600;
+    font-family: "Arial";
+
+}
+
+.item a.active {
+    color: #048f04;
 }
 
 .itemImg {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .itemImg img {
@@ -28,6 +47,4 @@
     cursor: pointer;
 }
 
-.item a.active {
-    color: snow;
-}
+
