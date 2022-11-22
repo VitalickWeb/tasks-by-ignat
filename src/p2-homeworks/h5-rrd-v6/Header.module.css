@@ -8,7 +8,6 @@
 .NavImgBox.NavLinkBox {
     align-items: center;
     margin-right: 5px;
-    /*display: none;*/
 }
 
 .item a {
@@ -20,10 +19,7 @@
 }
 
 .item a:hover {
-    /*padding: 2px 4px 2px 4px;*/
-    /*border-radius: 3px;*/
     text-decoration: none;
-    /*background-color: #616060;*/
     color: gold;
     font-weight: 600;
     font-family: "Arial";
