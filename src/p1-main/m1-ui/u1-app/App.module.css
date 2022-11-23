@@ -1,3 +1,10 @@
 .App {
-
+    background-image: url(https://top-fon.com/uploads/posts/2022-09/1663860972_3-top-fon-com-p-serii-fon-html-foto-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

@@ -14,7 +14,6 @@ function Header() {
 
     return (
         <div className={st.NavImgBox}>
-            {/*// add NavLinks*/}
             {hide &&
                 <div className={st.NavLinkBox}>
                     <div className={st.item}>

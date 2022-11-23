@@ -2,7 +2,6 @@
     min-height: 68px;
     display: flex;
     padding-left: 10px;
-    background-color: rgba(87, 159, 191, 0.5);
 }
 
 .NavImgBox.NavLinkBox {
@@ -42,8 +41,8 @@ img.imgRotate {
     border-radius: 50px;
     border: 4px double rgba(87, 159, 191, 0.76);
     cursor: pointer;
-    -webkit-transition: -webkit-transform .6s ease-in-out;
-    transition: transform .6s ease-in-out;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
 }
 
 img.imgRotate:hover {
