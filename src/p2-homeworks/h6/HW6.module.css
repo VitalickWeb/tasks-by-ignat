@@ -1,5 +1,4 @@
 .redactorBox {
-    margin-left: 10px;
     min-height: 100px;
 }
 
@@ -8,9 +7,14 @@
     margin-bottom: 10px;
 }
 
-.redactorBox .editableSpan {
+.redactorPencil {
     display: flex;
     justify-content: center;
+}
+
+.redactorPencil .pencil {
+    display: flex;
+    align-items: center;
 }
 
 .redactorBox .buttonBlock {
@@ -38,6 +42,7 @@
     -webkit-animation: pulsate 2.2s linear infinite;
     animation: pulsate 2.2s linear infinite;
     margin-right: 10px;
+    margin-left: 16px;
 }
 
 .save:hover {
@@ -86,7 +91,6 @@
     box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0, 0, 0, .3) 0 2px 5px;
     -webkit-animation: pulsate 2.2s linear infinite;
     animation: pulsate 2.2s linear infinite;
-    margin-right: 10px;
 }
 
 .restore:hover {
