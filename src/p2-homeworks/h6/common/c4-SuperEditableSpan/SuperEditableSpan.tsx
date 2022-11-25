@@ -31,7 +31,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     const {children, onDoubleClick, className, ...restSpanProps} = spanProps || {}
 
     const onEnterCallback = () => {
-        setEditMode(editMode) // выключить editMode при нажатии Enter
+        setEditMode(false) // выключить editMode при нажатии Enter
 
         onEnter && onEnter()
     }
