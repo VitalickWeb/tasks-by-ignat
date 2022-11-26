@@ -5,16 +5,8 @@
 .editableSpan {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.redactorPencil {
     display: flex;
     justify-content: center;
-}
-
-.redactorPencil .pencil {
-    display: flex;
-    align-items: center;
 }
 
 .redactorBox .buttonBlock {
