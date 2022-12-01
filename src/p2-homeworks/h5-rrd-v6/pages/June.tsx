@@ -3,7 +3,7 @@ import HW7 from "../../h7/HW7";
 
 const June = () => {
     return (
-        <div>
+        <div style={{textAlign: "center"}}>
             <hr/>
             <h3>June</h3>
             <HW7/>
